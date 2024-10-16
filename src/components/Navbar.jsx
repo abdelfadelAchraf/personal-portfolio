@@ -34,7 +34,7 @@ const Navbar = () => {
             <div className='flex justify-between gap-6'>
                 <div>
                     {/**<img src={logo} alt="logo" width={90} className='m-2' /> */}
-                   <a href=""><h1 className='mr-14 text-cyan-500 hover:text-cyan-800 transition'>HRAF</h1></a>
+                   <a href=""><h1 className='mr-14 text-yellow-500 hover:text-yellow-900 transition'>HRAF</h1></a>
                 </div>
             </div>
 
@@ -54,7 +54,7 @@ const Navbar = () => {
        <section className='rounded-lg lg:hidden'>
           <div className='flex items-center justify-between'>
              <div>
-                <a href=""><h1 className=' m-2 text-cyan-500 hover:text-cyan-800 transition'>HRAF</h1></a>
+                <a href=""><h1 className=' m-2 text-yellow-500 hover:text-yellow-900 transition'>HRAF</h1></a>
              </div>
              <div className='flex items-center '>
                 <button className='focus:outline-none lg:hidden' onClick={ToggleMenu}>
@@ -69,7 +69,7 @@ const Navbar = () => {
           {isMenuOpen && (
             <ul className='ml-4 mt-4 flex flex-col gap-4 '>
                   {NAVIGATION_LINKS.map((item,index) =>(
-                    <li key={index}>
+                    <li key={index} className='hover:text-yellow-600'>
                         <a href={item.href} onClick={(e) =>handleLinkClick(e,item.href)} className='block w-full text-xl font-semibold'>
                             {item.label}
                         </a>
