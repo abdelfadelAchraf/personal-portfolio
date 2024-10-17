@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { NAVIGATION_LINKS } from '../constants';
 import { FaBars, FaTimes } from 'react-icons/fa';
-
 const Navbar = () => {
 
     const [isMenuOpen,setIsMenuOpen] = useState(false);
@@ -58,9 +57,9 @@ const Navbar = () => {
              <div className='flex items-center '>
                 <button className='focus:outline-none lg:hidden' onClick={ToggleMenu}>
                 {isMenuOpen ? (
-                        <FaTimes className='m-2 h-6 w-5'/>
+                        <FaTimes className='mr-7 h-6 w-5'/>
                     ) : (
-                        <FaBars className='m-2 h-6 w-5'/>
+                        <FaBars className='mr-7 h-6 w-5'/>
                     )}
                 </button>
              </div>
