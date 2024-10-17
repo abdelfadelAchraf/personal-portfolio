@@ -39,7 +39,7 @@ export const NAVIGATION_LINKS = [
 ];
 
 export const PROFILE = {
-  name: "Robert Butcher",
+  name: "Achraf Abdelfadel",
   info: "Full-stack developer with a flair for graphic design.",
 };
 
