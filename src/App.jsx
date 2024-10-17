@@ -4,6 +4,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/skills'
+import Achievements from './components/Achievements'
 const App = () => {
   return (
     <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased h-screen'>
@@ -12,6 +13,7 @@ const App = () => {
       <About/>
       <Projects/>
       <Skills/>
+      <Achievements/>
       
     
     </main>
