@@ -5,15 +5,17 @@ import {
   FaFacebook,
   FaDiscord,
   FaInstagram,
+  FaHtml5,
+  FaJs,
  
 } from "react-icons/fa6";
 
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
-import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
+import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
+import { SiMongodb, SiTails } from "react-icons/si";
+import { FaAngular, FaNodeJs } from "react-icons/fa";
+import { FaBootstrap } from "react-icons/fa";
+import { FaCss3 } from "react-icons/fa";
 
 import image1 from "../assets/project1.jpeg";
 import image2 from "../assets/project2.jpeg";
@@ -45,9 +47,9 @@ export const PROFILE = {
 
 export const ABOUT = {
   text1:
-    "I create dynamic, responsive websites that blend creativity with efficiency",
+    "Engineering Student @ ENSAB | CEC Designer",
   text2:
-    "Hello! I'm Robert Butcher, a full-stack developer with a flair for graphic design. I thrive on crafting web experiences that are not only visually stunning but also highly functional and user-friendly. My passion for detail ensures that every project is polished and professional. Beyond coding, I'm an avid explorer of new cultures and cuisines. My curiosity drives me to stay on the cutting edge of technology and design trends, bringing innovative and practical solutions to every challenge. Whether I'm developing a sleek website or diving into the latest tech, I am dedicated to delivering excellence in every project.",
+    "I am a first-year engineering student at the National School of Applied Sciences of Berrechid (ENSAB). As a designer at the CEC Computer Engineering club, I collaborate on creative and technical projects, helping organize and promote events. I am passionate about problem-solving, teamwork, and continuously improving my communication and design skills. My goal is to contribute to innovative web solutions through a combination of creativity and collaboration.",
 };
 
 export const PROJECTS = [
@@ -97,12 +99,43 @@ export const PROJECTS = [
     image: image8,
   },
 ];
-
+/** {
+    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
+    name: "Redis",
+    experience: "1+ year",
+  },
+  
+  {
+    icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
+    name: "PostgreSQL",
+    experience: "1+ year",
+  },
+  */
 export const SKILLS = [
+  {
+    icon: <FaHtml5 className="text-4xl lg:text-6xl text-white" />,
+    name: "Html5",
+    experience: "3+ year",
+  },
+  {
+    icon: <FaJs className="text-4xl lg:text-6xl text-white" />,
+    name: "Js",
+    experience: "1.5+ year",
+  },
+  {
+    icon: <FaCss3 className="text-4xl lg:text-6xl text-white" />,
+    name: "Css3",
+    experience: "3+ year",
+  },
   {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "React",
-    experience: "2+ years",
+    experience: "1+ years",
+  },
+  {
+    icon: <FaAngular className="text-4xl lg:text-6xl text-cyan-400" />,
+    name: "React",
+    experience: "1+ years",
   },
   {
     icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
@@ -112,23 +145,26 @@ export const SKILLS = [
   {
     icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
     name: "MongoDB",
-    experience: "1.5+ years",
+    experience: "1/2+ years",
   },
-  {
-    icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
-    name: "Redis",
-    experience: "1+ year",
-  },
+ 
   {
     icon: <FaNodeJs className="text-4xl lg:text-6xl text-green-600" />,
     name: "Node.js",
-    experience: "2+ years",
+    experience: "1/2+ years",
   },
   {
-    icon: <BiLogoPostgresql className="text-4xl lg:text-6xl text-sky-700" />,
-    name: "PostgreSQL",
+    icon: <FaBootstrap className="text-4xl lg:text-6xl text-white" />,
+    name: "Bootstrap",
     experience: "1+ year",
   },
+  {
+    icon: <TbBrandTailwind className="text-4xl lg:text-6xl text-white" />,
+    name: "Bootstrap",
+    experience: "1+ year",
+  },
+  
+  
 ];
 
 export const ACHIEVEMENT = {

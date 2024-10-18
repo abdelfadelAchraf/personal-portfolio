@@ -19,7 +19,7 @@ const Projects = () => {
                 <motion.div key={index} 
                 initial={{opacity:0, y:100  }}
                 whileInView={{opacity:1, y:0 }}
-                transition={{duration:1, delay:0.5}}
+                transition={{duration:1}}
                 viewport={{once:true}}
                 >
                     <Cards image={item.image} title={item.title} subtitle={item.subtitle} link="#"/>
