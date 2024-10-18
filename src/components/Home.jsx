@@ -1,5 +1,5 @@
 import React from 'react'
-import profilepic from '../assets/robertButcher1.jpg'
+import profilepic from '../assets/achraf1.jpg'
 import { PROFILE } from '../constants'
 
 const Home = () => {
