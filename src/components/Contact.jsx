@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import toast, { Toaster, useToaster } from 'react-hot-toast'
 import emailjs from '@emailjs/browser'
+import { motion } from 'framer-motion'
 const Contact = () => {
 
     const [formData, setFormData] = useState({
@@ -67,10 +68,17 @@ const Contact = () => {
   return (
    <section className='mx-auto max-w-3xl p-4' id='contact'>
      <Toaster/>
-     <h2 className='my-8 text-center text-4xl font-semibold tracking-tighter'>
+     <motion.h2 className='my-8 text-center text-4xl font-semibold tracking-tighter'
+                       initial={{opacity:0, x:100  }}
+                       whileInView={{opacity:1, x:0 }}
+                       transition={{duration:1, delay:0.5}}
+     >
         Let's connect
-     </h2>
-     <form onSubmit={handlesubmit}>
+     </motion.h2>
+     <motion.form onSubmit={handlesubmit}  
+                       initial={{opacity:0, y:100  }}
+                       whileInView={{opacity:1, y:0 }}
+                       transition={{duration:1, delay:0.5}}>
         <fieldset className='mb-4'>
             <input type="text" 
             id='name' 
@@ -107,7 +115,7 @@ const Contact = () => {
         </fieldset>
         <button type='submit' className={`mb-8 w-full rounded bg-yellow-400 px-4 py-2 text-sm font-semibold text-slate-500
              hover:bg-yellow-500 ${isSending ? "cursor-not-allowed opacity-50" :""}`} disabled={isSending}>{isSending ? "Sending...": "Send"}</button>
-     </form>
+     </motion.form>
    </section>
   )
 }

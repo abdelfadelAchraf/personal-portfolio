@@ -1,6 +1,6 @@
 import React from 'react'
 import { SOCIAL_MEDIA_LINKS } from '../constants'
-
+import { motion } from 'framer-motion'
 const Footer = () => {
   return (
     <section className='mb-8 mt-20'>
@@ -11,16 +11,24 @@ const Footer = () => {
             </figure>
         </section>
 
-        <section className='flex items-center justify-center gap-8 '>
+        <motion.section className='flex items-center justify-center gap-8 '
+        
+        initial={{opacity:0, x:100  }}
+        whileInView={{opacity:1, x:0 }}
+        transition={{duration:1, delay:0.2}}>
           {SOCIAL_MEDIA_LINKS.map((media, index) =>(
             <a key={index} href={media.href} target='_blank' rel='noopener noreferrer'>
                 {media.icon}
             </a>
           ))}
-        </section>
-    <p className='mt-8 text-center text-sm tracking-wide text-gray-400'>
+        </motion.section>
+    <motion.p className='mt-8 text-center text-sm tracking-wide text-gray-400'
+      initial={{opacity:0, x:-100  }}
+      whileInView={{opacity:1, x:0 }}
+      transition={{duration:1, delay:0.2}}
+    >
         &copy;created by Achraf Abdelfadel. All rights reserved.
-    </p>
+    </motion.p>
     </section>
   )
 }
