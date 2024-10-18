@@ -7,13 +7,13 @@ const About = () => {
          <motion.h2 className='mt-20 text-center text-4xl font-semibold'
          initial={{opacity:0, y:-20  }}
          whileInView={{opacity:1, y:0 }}
-         transition={{duration:.5, delay:.2}}
+         transition={{duration:.5}}
          viewport={{once:true}}
          >About</motion.h2>
          <motion.h3 className='p-4 text-6xl uppercase font-semibold lg:text-[8rem]'
           initial={{opacity:0, x:-20  }}
           whileInView={{opacity:1, x:0 }}
-          transition={{duration:1,delay:.3}}
+          transition={{duration:1}}
           viewport={{once:true}}
          >{ABOUT.text1}</motion.h3>
          <motion.p className='mr-24 pl-4 leading-loose'
