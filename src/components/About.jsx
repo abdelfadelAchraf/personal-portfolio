@@ -3,7 +3,7 @@ import { ABOUT } from '../constants'
 import { motion } from 'framer-motion'
 const About = () => {
   return (
-    <section className='container mx-auto' id='about'> 
+    <section  id="about" className='container mx-auto' > 
          <motion.h2 className='mt-20 text-center text-4xl font-semibold'
          initial={{opacity:0, y:-20  }}
          whileInView={{opacity:1, y:0 }}
