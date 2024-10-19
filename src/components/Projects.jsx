@@ -22,7 +22,7 @@ const Projects = () => {
                 transition={{duration:1}}
                 viewport={{once:true}}
                 >
-                    <Cards image={item.image} title={item.title} subtitle={item.subtitle} link="#"/>
+                    <Cards image={item.image} title={item.title} subtitle={item.subtitle} link={item.link}/>
                 </motion.div>
             ))}
         </section>

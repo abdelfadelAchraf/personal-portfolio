@@ -24,9 +24,9 @@ const Skills = () => {
                 </motion.section>
 
                 <motion.section className='text-md border-b-2 border-yellow-400 font-semibold lg:text-xl'
-                  initial={{opacity:0, x:100  }}
+                  initial={{opacity:0, x:0  }}
                   whileInView={{opacity:1, x:0 }}
-                  transition={{duration:1, delay:0.5}}
+                  transition={{duration:1, delay:1}}
                 >
                     <span>{skill.experience}</span>
                 </motion.section>

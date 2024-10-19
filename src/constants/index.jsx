@@ -58,14 +58,17 @@ export const PROJECTS = [
     subtitle:
       "A full-stack e-commerce platform built with React, Node.js, and MongoDB.",
     image: image1,
+    link:"https://www.linkedin.com/feed/",
   },
   {
     title: "Social Media App",
     subtitle:
       "A social media application developed using Next.js and Firebase.",
     image: image2,
+    link:"https://github.com/",
+
   },
-  {
+ /* {
     title: "Project Management Tool",
     subtitle: "A project management tool built with Django and PostgreSQL.",
     image: image3,
@@ -97,7 +100,7 @@ export const PROJECTS = [
     title: "Recipe Finder",
     subtitle: "A recipe finder application developed with Angular and Node.js.",
     image: image8,
-  },
+  },*/
 ];
 /** {
     icon: <DiRedis className="text-4xl lg:text-6xl text-red-600" />,
@@ -210,10 +213,10 @@ export const SOCIAL_MEDIA_LINKS = [
     href: "https://x.com/",
     icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
   },
-  {
+  /*{
     href: "https://x.com/",
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
-  },
+  },*/
   {
     href: "https://x.com/",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
