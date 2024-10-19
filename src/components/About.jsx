@@ -10,7 +10,7 @@ const About = () => {
          transition={{duration:.5}}
          viewport={{once:true}}
          >About</motion.h2>
-         <motion.h3 className='p-4 text-6xl uppercase font-semibold lg:text-[8rem]'
+         <motion.h3 className='p-4 md:text-[6rem] sm:text-[3rem] text-6xl uppercase font-semibold lg:text-[8rem]'
           initial={{opacity:0, x:-20  }}
           whileInView={{opacity:1, x:0 }}
           transition={{duration:1}}
