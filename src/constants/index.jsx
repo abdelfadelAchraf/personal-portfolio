@@ -54,18 +54,18 @@ export const ABOUT = {
 
 export const PROJECTS = [
   {
-    title: "E-commerce Platform",
+    title: "Personel portfolio",
     subtitle:
-      "A full-stack e-commerce platform built with React, Node.js, and MongoDB.",
+      "A full  platform built with React,Js Tailwinds, &nd framer motion.",
     image: image1,
-    link:"https://www.linkedin.com/feed/",
+    link:"https://github.com/abdelfadelAchraf/personal-portfolio",
   },
   {
-    title: "Social Media App",
+    title: "A Quiz App",
     subtitle:
-      "A social media application developed using Next.js and Firebase.",
+      "A Quiz App built with HTML, CSS and JAVASCRIPT",
     image: image2,
-    link:"https://github.com/",
+    link:"https://github.com/abdelfadelAchraf/quiz-App",
 
   },
  /* {
@@ -210,7 +210,7 @@ export const TESTIMONIALS = [
 
 export const SOCIAL_MEDIA_LINKS = [
   {
-    href: "https://x.com/",
+    href: "https://facebook.com/abdelfadel achraf",
     icon: <FaFacebook fontSize={25} className="hover:opacity-80" />,
   },
   /*{
@@ -218,19 +218,19 @@ export const SOCIAL_MEDIA_LINKS = [
     icon: <FaDiscord fontSize={25} className="hover:opacity-80" />,
   },*/
   {
-    href: "https://x.com/",
+    href: "https://instagram.com/Hraf1010",
     icon: <FaInstagram fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://x.com/",
+    href: "https://x.com/abdelfadelHraf",
     icon: <FaXTwitter fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://github.com/",
+    href: "https://github.com/abdelfadelAchraf",
     icon: <FaGithub fontSize={25} className="hover:opacity-80" />,
   },
   {
-    href: "https://www.linkedin.com/",
+    href: "https://www.linkedin.com/in/achraf-abdelfadel-6b67282a6/",
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];
