@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NAVIGATION_LINKS } from '../constants';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { motion, px } from 'framer-motion';
 const Navbar = () => {
 
     const [isMenuOpen,setIsMenuOpen] = useState(false);
@@ -26,8 +27,9 @@ const Navbar = () => {
     }
     setIsMenuOpen(false);
    }
+  
   return (
-    <nav className='fixed left-0 right-0  top-4 z-50'>
+    <nav className='fixed left-0 right-0 top-4 z-50'>
         <section className='mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-black py-3  lg:flex'>
             <div className='flex justify-between gap-6'>
                 <div>
@@ -57,23 +59,28 @@ const Navbar = () => {
              <div className='flex items-center '>
                 <button className='focus:outline-none lg:hidden' onClick={ToggleMenu}>
                 {isMenuOpen ? (
-                        <FaTimes className='mr-7 h-6 w-5'/>
+                        <FaTimes className='mr-7 h-6 w-5 text-yellow-500'/>
                     ) : (
-                        <FaBars className='mr-7 h-6 w-5'/>
+                        <FaBars className='mr-7 h-6 w-5 text-yellow-500'/>
                     )}
                 </button>
              </div>
           </div>
           {isMenuOpen && (
-            <ul className='ml-4 mt-4 flex flex-col gap-4 '>
+            <motion.ul className='ml-4 mr-8 mt-4 flex flex-col gap-4 bg-black py-2 px-2 rounded' 
+            initial={{opacity:0 , x:100 }}
+            whileInView={{opacity:1,x :0 }}
+            transition={{duration:.5}}
+            viewport={{once:true}}
+            >
                   {NAVIGATION_LINKS.map((item,index) =>(
-                    <li key={index} className='hover:text-yellow-600'>
+                    <li key={index} className='bg-gray-500 p-2 hover:text-yellow-600'>
                         <a href={item.href} onClick={(e) =>handleLinkClick(e,item.href)} className='block w-full text-xl font-semibold'>
                             {item.label}
                         </a>
                     </li>
                 ))}
-            </ul>
+            </motion.ul>
           )}
        </section>
     </nav>

@@ -7,13 +7,14 @@ import {
   FaInstagram,
   FaHtml5,
   FaJs,
+  FaReact,
  
 } from "react-icons/fa6";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs, TbBrandTailwind } from "react-icons/tb";
 import { SiMongodb, SiTails } from "react-icons/si";
-import { FaAngular, FaNodeJs } from "react-icons/fa";
+import { FaAngular, FaJava, FaNodeJs, FaPython } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 
@@ -35,16 +36,37 @@ export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Award", href: "#award" },
-  { label: "Testimonials", href: "#testimonials" },
+  //{ label: "Award", href: "#award" },
+ // { label: "Testimonials", href: "#testimonials" },
   { label: "Contact", href: "#contact" },
 ];
 
 export const PROFILE = {
   name: "Achraf Abdelfadel",
-  info: "Full-stack developer with a flair for graphic design.",
+  info: "Engineering Student @ ENSAB, interesting in Web Dev.",
 };
-
+export const CERTIFICATIONS =[
+  {
+    logo: <FaReact/>,
+    name:"React Js",
+    ref:"https://www.react.com/",
+  },
+  {
+    logo: <FaPython/>,
+    name:"React Js",
+    ref:"https://www.react.com/",
+  },
+  {
+    logo: <FaJava/>,
+    name:"React Js",
+    ref:"https://www.react.com/",
+  },
+  {
+    logo: <FaReact/>,
+    name:"React Js",
+    ref:"https://www.react.com/",
+  },
+]
 export const ABOUT = {
   text1:
     "Engineering Student @ ENSAB | CEC Designer",
@@ -68,11 +90,12 @@ export const PROJECTS = [
     link:"https://github.com/abdelfadelAchraf/quiz-App",
 
   },
- /* {
-    title: "Project Management Tool",
-    subtitle: "A project management tool built with Django and PostgreSQL.",
+  {
+    title: "Dentist App",
+    subtitle: "A project for taking Appointement buit with HTML,CSS,and javascript.",
     image: image3,
   },
+  /*
   {
     title: "Personal Portfolio",
     subtitle:
@@ -118,27 +141,27 @@ export const SKILLS = [
   {
     icon: <FaHtml5 className="text-4xl lg:text-6xl text-white" />,
     name: "Html5",
-    experience: "3+ year",
+    experience: "3+ years",
   },
   {
     icon: <FaJs className="text-4xl lg:text-6xl text-white" />,
     name: "Js",
-    experience: "1.5+ year",
+    experience: "1.5+ years",
   },
   {
     icon: <FaCss3 className="text-4xl lg:text-6xl text-white" />,
     name: "Css3",
-    experience: "3+ year",
+    experience: "3+ years",
   },
   {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "React",
-    experience: "1+ years",
+    experience: "1+ year",
   },
   {
     icon: <FaAngular className="text-4xl lg:text-6xl text-cyan-400" />,
-    name: "React",
-    experience: "1+ years",
+    name: "Angular",
+    experience: "0.5+ year",
   },
   {
     icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
@@ -148,7 +171,7 @@ export const SKILLS = [
   {
     icon: <SiMongodb className="text-4xl lg:text-6xl text-green-600" />,
     name: "MongoDB",
-    experience: "1/2+ years",
+    experience: "0.5+ year",
   },
  
   {

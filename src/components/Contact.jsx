@@ -51,12 +51,12 @@ const Contact = () => {
                 "f11-YMxEN3g4PAVum"
             )
             .then((response) => {
-                console.log("SUCCESS", response.status, response.text);
+               // console.log("SUCCESS", response.status, response.text);
                 toast.success("Message sent successfully");
                 setFormData({ name: "", email: "", message: "" });
             })
             .catch((error) => {
-                console.log("FAILED...", error);
+               // console.log("FAILED...", error);
                 toast.error("Failed to send message. Please try again.");
             })
             .finally(() => {
@@ -85,7 +85,7 @@ const Contact = () => {
                         value={formData.name}
                         placeholder='Name:'
                         onChange={handleChange}
-                        className='mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-9 py-2 text-sm focus:outline-none' />
+                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:outline-none' />
                     {errors.name && (
                         <p className='text-sm text-pink-700'> {errors.name}</p>
                     )}
@@ -97,7 +97,7 @@ const Contact = () => {
                         value={formData.email}
                         placeholder='Email:'
                         onChange={handleChange}
-                        className='mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-9 py-2 text-sm focus:outline-none' />
+                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:outline-none' />
                     {errors.email && (
                         <p className='text-sm text-pink-700'> {errors.email}</p>
                     )}
@@ -109,7 +109,7 @@ const Contact = () => {
                         value={formData.message}
                         placeholder='Message:'
                         onChange={handleChange}
-                        className='mb-8 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-9 py-2 text-sm focus:outline-none'
+                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:outline-none'
                         rows="8" wrap='soft' />
                     {errors.message && (
                         <p className='text-sm text-pink-700'> {errors.message}</p>

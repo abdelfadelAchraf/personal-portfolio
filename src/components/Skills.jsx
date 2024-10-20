@@ -15,9 +15,9 @@ const Skills = () => {
             SKILLS.map((skill, index) =>(
                <section key={index} className='mb-8 flex items-center justify-between'>
                 <motion.section className='flex items-center'
-                  initial={{opacity:0, x:-100  }}
-                whileInView={{opacity:1, x:0 }}
-                transition={{duration:1, delay:0.5}}
+                  initial={{opacity:0, x:0  }}
+                  whileInView={{opacity:1, x:0 }}
+                  transition={{duration:1, delay:1}}
                 >
                     {skill.icon}
                     <h3 className='px-6 text-xl lg:text-3xl'>{skill.name}</h3>

@@ -4,8 +4,8 @@ import Home from './components/Home'
 import About from './components/About'
 import Projects from './components/Projects'
 import Skills from './components/skills'
-import Achievements from './components/Achievements'
-import Testimonials from './components/Testimonials'
+//import Achievements from './components/Achievements'
+/*import Testimonials from './components/Testimonials'*/
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 const App = () => {
@@ -16,8 +16,8 @@ const App = () => {
       <About/>
       <Projects/>
       <Skills/>
-      <Achievements/>
-      <Testimonials/>
+     {/**      <Achievements/> */}
+     {/** <Testimonials/> */}
       <Contact/>
       <Footer/>
       
