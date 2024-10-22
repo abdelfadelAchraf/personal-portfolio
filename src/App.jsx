@@ -10,7 +10,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 const App = () => {
   return (
-    <main className='overflow-x-hidden bg-black tracking-tighter text-gray-200 antialiased h-screen'>
+    <main className='overflow-x-hidden bg-black tracking-tighter text-gray-400 antialiased h-screen'>
      <Navbar/>
       <Home/>
       <About/>
