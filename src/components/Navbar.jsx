@@ -11,7 +11,13 @@ const Navbar = () => {
    const ToggleMenu =()=>{
     setIsMenuOpen(!isMenuOpen);
    }
-
+/** {NAVIGATION_LINKS.map((item,index) =>(
+                    <li key={index}>
+                        <a href={item.href} onClick={(e) =>handleLinkClick(e,item.href)} className='text-sm hover:text-yellow-400'>
+                            {item.label}
+                        </a>
+                    </li>
+                ))} */
    /**===================For smooth scrolling ==========================*/
    const handleLinkClick =(event , href)=>{
     event.preventDefault();
@@ -39,13 +45,12 @@ const Navbar = () => {
             </div>
 
             <ul className='flex items-center gap-4'>
-                {NAVIGATION_LINKS.map((item,index) =>(
-                    <li key={index}>
-                        <a href={item.href} onClick={(e) =>handleLinkClick(e,item.href)} className='text-sm hover:text-yellow-400'>
-                            {item.label}
-                        </a>
-                    </li>
-                ))}
+               
+                <li><a href="/"  className='text-sm hover:text-yellow-400'>Home</a></li>
+                <li><a href="#about"  className='text-sm hover:text-yellow-400'>about</a></li>
+                <li><a href="#projects"  className='text-sm hover:text-yellow-400'>Projects</a></li>
+                <li><a href="#skills"  className='text-sm hover:text-yellow-400'>skills</a></li>
+                <li><a href="#contact"  className='text-sm hover:text-yellow-400'>contact</a></li>
             </ul>
         </section>
 

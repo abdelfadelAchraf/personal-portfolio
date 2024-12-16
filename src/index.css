@@ -8,3 +8,9 @@
 *{
   font-family: Outfit;
 }
+::-webkit-scrollbar{
+  @apply hidden;
+}
+html{
+  scroll-behavior: smooth;
+}

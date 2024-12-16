@@ -66,7 +66,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='mx-auto max-w-3xl p-4' id='contact'>
+        <section className='mx-auto max-w-3xl px-4 pt-6' id='contact'>
             <Toaster />
             <motion.h2 className='my-8 text-center text-4xl font-semibold tracking-tighter'
                 initial={{ opacity: 0, x: 100 }}
