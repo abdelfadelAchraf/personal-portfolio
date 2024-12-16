@@ -5,7 +5,7 @@ import { motion, px } from 'framer-motion';
 const Navbar = () => {
 
     const [isMenuOpen,setIsMenuOpen] = useState(false);
-
+    
 
    /*===================togggle the state===================*/
    const ToggleMenu =()=>{
@@ -67,15 +67,15 @@ const Navbar = () => {
              </div>
           </div>
           {isMenuOpen && (
-            <motion.ul className='ml-4 mr-8 mt-4 flex flex-col gap-4 bg-black py-2 px-2 rounded' 
-            initial={{opacity:0 , x:100 }}
+            <motion.ul className='ml-4 mr-8 mt-4 flex flex-col gap-4 bg-black w-max py-2 px-2 rounded' 
+            initial={{opacity:0 , x:-100 }}
             whileInView={{opacity:1,x :0 }}
             transition={{duration:.5}}
             viewport={{once:true}}
             >
                   {NAVIGATION_LINKS.map((item,index) =>(
-                    <li key={index} className='bg-gray-500 p-2 hover:text-yellow-600'>
-                        <a href={item.href} onClick={(e) =>handleLinkClick(e,item.href)} className='block w-full text-xl font-semibold'>
+                    <li key={index} className=' p-2 hover:text-yellow-300'>
+                        <a href={item.href} onClick={(e) =>handleLinkClick(e,item.href)} className='block w-full text-xl font-semibold text-white'>
                             {item.label}
                         </a>
                     </li>

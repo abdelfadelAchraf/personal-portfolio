@@ -30,7 +30,7 @@ const Home = () => {
                 animate={{opacity:1}}
                 transition={{duration:1, delay:1.5}}>{PROFILE.info}</motion.p>
            </div>
-      
+     
     </section>
   )
 }

@@ -85,19 +85,19 @@ const Contact = () => {
                         value={formData.name}
                         placeholder='Name:'
                         onChange={handleChange}
-                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:outline-none' />
+                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-1 text-sm focus:outline-none' />
                     {errors.name && (
                         <p className='text-sm text-pink-700'> {errors.name}</p>
                     )}
                 </fieldset>
-                <fieldset className='mb-4'>
+                <fieldset className='mb-2'>
                     <input type="email"
                         id='email'
                         name='email' // Added name attribute
                         value={formData.email}
                         placeholder='Email:'
                         onChange={handleChange}
-                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-2 text-sm focus:outline-none' />
+                        className='mb-4 w-full appearance-none rounded-lg border border-gray-900 bg-transparent px-3 py-1 text-sm focus:outline-none' />
                     {errors.email && (
                         <p className='text-sm text-pink-700'> {errors.email}</p>
                     )}

@@ -144,25 +144,26 @@ export const SKILLS = [
     experience: "3+ years",
   },
   {
-    icon: <FaJs className="text-4xl lg:text-6xl text-white" />,
-    name: "Js",
-    experience: "1.5+ years",
-  },
-  {
     icon: <FaCss3 className="text-4xl lg:text-6xl text-white" />,
     name: "Css3",
     experience: "3+ years",
   },
   {
+    icon: <FaJs className="text-4xl lg:text-6xl text-white" />,
+    name: "Js",
+    experience: "1.5+ years",
+  },
+  
+  {
     icon: <RiReactjsLine className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "React",
     experience: "1+ year",
   },
-  {
+ /** {
     icon: <FaAngular className="text-4xl lg:text-6xl text-cyan-400" />,
     name: "Angular",
     experience: "0.5+ year",
-  },
+  }, 
   {
     icon: <TbBrandNextjs className="text-4xl lg:text-6xl text-white" />,
     name: "Next.js",
@@ -183,7 +184,7 @@ export const SKILLS = [
     icon: <FaBootstrap className="text-4xl lg:text-6xl text-white" />,
     name: "Bootstrap",
     experience: "1+ year",
-  },
+  },*/
   {
     icon: <TbBrandTailwind className="text-4xl lg:text-6xl text-white" />,
     name: "Bootstrap",
